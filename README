@@ -1,0 +1,15 @@
+
+Super-duper straightforward poller for the APC AP7641 series of rack PDUs.
+
+I had some issues getting mine to expose any useful data via ethernet without buying expensive software from APC, so I scribbled this tool to observe the current output via the RS232 port. It is very simple and quite brittle - it works fine for me but it might not for you.
+
+You'll need a cable, too. The RJ12 at the PDU can be wired to a DB9 like this:
+
+APC						PC
+
+pin 1		NC		X
+pin 2		GND		pin 5
+pin 3		rx		pin 2
+pin 4		tx		pin 3
+pin 5		NC		X
+pin 6		NC		X
